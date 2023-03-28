@@ -4,16 +4,16 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 final List<String> images = [
-  'assets/01.jpg',
-  'assets/02.jpg',
-  'assets/03.jpg',
-  'assets/04.jpg',
-  'assets/05.jpg',
-  'assets/06.jpg',
-  'assets/07.jpg',
-  'assets/08.jpg',
-  'assets/09.jpg',
-  'assets/10.jpg',
+  'assets_low/01.jpg',
+  'assets_low/02.jpg',
+  'assets_low/03.jpg',
+  'assets_low/04.jpg',
+  'assets_low/05.jpg',
+  'assets_low/06.jpg',
+  'assets_low/07.jpg',
+  'assets_low/08.jpg',
+  'assets_low/09.jpg',
+  'assets_low/10.jpg',
 ];
 
 List<Widget> generateImageTile() {

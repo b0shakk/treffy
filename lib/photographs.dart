@@ -9,45 +9,6 @@ import 'dart:math';
 
 import 'package:treffy_portfolio/onHover.dart';
 
-final List<String> images = [
-  'assets/01.jpg',
-  'assets/02.jpg',
-  'assets/03.jpg',
-  'assets/04.jpg',
-  'assets/05.jpg',
-  'assets/06.jpg',
-  'assets/07.jpg',
-  'assets/08.jpg',
-  'assets/09.jpg',
-
-  'assets/10.jpg',
-  'assets/11.jpg',
-  'assets/12.jpg',
-  'assets/13.jpg',
-  'assets/14.jpg',
-  'assets/15.jpg',
-  'assets/16.jpg',
-  'assets/17.jpg',
-  'assets/18.jpg',
-  'assets/19.jpg',
-
-  'assets/20.jpg',
-  'assets/21.jpg',
-  'assets/22.jpg',
-  'assets/23.jpg',
-  'assets/24.jpg',
-  'assets/25.jpg',
-  'assets/26.jpg',
-  'assets/27.jpg',
-  'assets/28.jpg',
-  'assets/29.jpg',
-
-  'assets/30.jpg',
-  'assets/31.jpg',
-  'assets/32.jpg',
-  'assets/33.jpg',
-];
-
 final List<String> images_low = [
   'assets_low/01.jpg',
   'assets_low/02.jpg',
@@ -103,7 +64,7 @@ class _PhotographsPageState extends State<PhotographsPage> {
     double width = MediaQuery.of(context).size.width;
     return Container(
       child: MasonryGridView.builder(
-        itemCount: images.length,
+        itemCount: images_low.length,
         gridDelegate:
             SliverSimpleGridDelegateWithFixedCrossAxisCount(crossAxisCount: (width>800)?4:2),
         itemBuilder: (context, index) => Padding(
@@ -111,7 +72,7 @@ class _PhotographsPageState extends State<PhotographsPage> {
             child: onHover(
               child: InkWell(
                 onTap: () {
-                  showImageViewer(context, Image.asset(images[index]).image,
+                  showImageViewer(context, Image.asset(images_low[index]).image,
                       backgroundColor: Colors.transparent,
                       swipeDismissible: true,
                       doubleTapZoomable: true,
